@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New York Times Search</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<body>
+	<div class="jumbotron">
+		<h1>New York Times Search</h1>
+	</div>
+
+	<div class="wrap">
+		<div class="container">
+			<section class="row">
+				<div class="col-md-12">
+					<form class="search-parameters">
+						<h1 class="search-parameters-header">Search Parameters</h2>
+						<hr>
+						<div class="form-group">
+							<label class="label-search" for="search">Search Term:</label><br />
+							<input type="text" id="search-input" name="search-term" />
+						</div>
+						<div class="form-group">
+							<label class="label-records" for="records">Number of Records to Achieve:</label><br />
+							<input type="text" id="record-input" name="search-records" />
+						</div>
+						<div class="form-group">
+							<label class="label-start" for="start">Start Year (Optional):</label><br />
+							<input type="text" id="start-input" name="search-start" />
+						</div>
+						<div class="form-group">
+							<label class="label-end" for="end">End Year (Optional):</label><br />
+							<input type="text" id="end-input" name="search-end" />
+						</div>
+						<button class="searchButton">Search</button>
+						<button class="clearButton">Clear Results</button>
+					</form>
+					<br>
+					<form class="top-articles">
+						<h1 class="top-articles-header">Top Articles</h1>
+						<hr>
+						<div class="results"></div>
+					</form>
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+</html>
